@@ -32,6 +32,10 @@ app.get("/", (req, res) => {
   res.json("hellow wordl");
 });
 
+app.post("/p", (re, res) => {
+  res.json("post");
+});
+
 app.use("/auth", AuthRoute);
 
 app.use("/tasks", TaskRoute);
